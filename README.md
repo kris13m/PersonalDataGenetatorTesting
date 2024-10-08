@@ -78,7 +78,7 @@ Create a Continuous Integration job or pipeline to test the integration of the a
 Implement continuous testing by running all unit and integration tests in the CI process
 Design and write end-to-end test(s) in Cypress, Selenium WebDriver, Playwright or similar
 
-#Delivery
+# Delivery
 
 The assignment must be delivered to Fronter in one zip file by 21 October 2024, 23:59:
 
@@ -91,7 +91,7 @@ A pdf file explaining how black-box design techniques were applied to the defini
 (e.g., definition of valid and non-valid partitions, boundary values, decision tables if applicable…)
 Screenshots of the static testing tool(s) used that show the value they brought to the testing activities
 
-#Presentation
+# Presentation
 
 On 22 October 2024 each group will make a presentation where they will show and explain the whole assignment to the rest of the class:
 
