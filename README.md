@@ -79,6 +79,7 @@ Implement continuous testing by running all unit and integration tests in the CI
 Design and write end-to-end test(s) in Cypress, Selenium WebDriver, Playwright or similar
 
 #Delivery
+
 The assignment must be delivered to Fronter in one zip file by 21 October 2024, 23:59:
 
 The source code of the application
@@ -91,6 +92,7 @@ A pdf file explaining how black-box design techniques were applied to the defini
 Screenshots of the static testing tool(s) used that show the value they brought to the testing activities
 
 #Presentation
+
 On 22 October 2024 each group will make a presentation where they will show and explain the whole assignment to the rest of the class:
 
 Demo of the application at work
