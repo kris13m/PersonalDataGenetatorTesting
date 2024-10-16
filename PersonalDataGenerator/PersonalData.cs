@@ -47,27 +47,47 @@ public class PersonalData
     public void SetCpr()
     {
         string cprPrefix = DateOfBirth.ToString("ddMMyy");
-        int cprSuffixAsNumber = _random.Next(1000, 2000);
 
+        int firstDigit = _random.Next(1, 10);
+        int secondDigit = _random.Next(1, 10);
+        int thirdDigit = _random.Next(1, 10);
+        int lastDigit = _random.Next(1, 10);
+        
         switch (Gender)
         {
             case "male":
                 // if male has even number
-                if (cprSuffixAsNumber % 2 == 0)
+                if (lastDigit % 2 == 0)
                 {
-                    cprSuffixAsNumber++;
+                    if (lastDigit >= 5)
+                    {
+                        lastDigit--;
+                    }
+                    else
+                    {
+                        lastDigit++;
+                    }
                 }
                 break;
             case "female":
                 // if female has even number
-                if (cprSuffixAsNumber % 2 == 1)
+                if (lastDigit % 2 == 1)
                 {
-                    cprSuffixAsNumber++;
+                    if (lastDigit >= 5)
+                    {
+                        lastDigit--;
+                    }
+                    else
+                    {
+                        lastDigit++;
+                    }
                 }
                 break;
         }
         
-        Cpr = $"{cprPrefix}-{cprSuffixAsNumber.ToString()}";
+        string cprSuffix = $"{firstDigit}{secondDigit}{thirdDigit}{lastDigit}";
+        
+        Cpr = $"{cprPrefix}-{cprSuffix}";
     }
 
     public void SetNameAndGender()
