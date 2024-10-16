@@ -53,6 +53,8 @@ public class PersonalData
         int thirdDigit = _random.Next(1, 10);
         int lastDigit = _random.Next(1, 10);
         
+        Console.WriteLine(lastDigit % 2);
+        
         switch (Gender)
         {
             case "male":
