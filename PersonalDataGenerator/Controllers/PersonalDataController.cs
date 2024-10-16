@@ -4,7 +4,7 @@ namespace PersonalDataGenerator.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-public class PersonController : ControllerBase
+public class PersonalDataController : ControllerBase
 {
     [HttpGet]
     public string GetHello()
