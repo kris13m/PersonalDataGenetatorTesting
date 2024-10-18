@@ -196,8 +196,7 @@ public void SetPhoneNumber()
     // Get random phone prefix
     string phone = PhonePrefixes[random.Next(0, PhonePrefixes.Length)];
     int prefixLength = phone.Length;
-
-    // Add random digits to fill the phone number to 8 digits in total
+    
     for (int index = 0; index < (8 - prefixLength); index++)
     {
         phone += GetRandomDigit().ToString();
