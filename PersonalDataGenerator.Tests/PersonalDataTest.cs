@@ -1,3 +1,5 @@
+using NuGet.Frameworks;
+
 namespace PersonalDataGenerator.Tests;
 
 public class PersonalDataTest
@@ -161,5 +163,17 @@ public class PersonalDataTest
 
         // Assert that an exception is thrown for more than 100 persons
         Assert.Throws<ArgumentOutOfRangeException>(() => pd.GenerateFakePersons(101));
+    }
+
+    [Fact]
+    public void Test_DateOfBirth_Matches_CPR()
+    {
+        var pd = new PersonalData();
+
+        string dateString = pd.DateOfBirth.ToString();
+        string dateStringToCpr = dateString.Substring(0, 2) + dateString.Substring(3, 2)+ dateString.Substring(8, 2);
+        string cpr = pd.Cpr.Substring(0,6);
+
+        Assert.Equal(cpr,dateStringToCpr);
     }
 }
