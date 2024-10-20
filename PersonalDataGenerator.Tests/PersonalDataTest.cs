@@ -15,10 +15,10 @@ public class PersonalDataTest
         var lastDigitAsString = pd.Cpr.Last().ToString();
         var lastDigitAsInt = Int32.Parse(lastDigitAsString);
         var moduloResult = (lastDigitAsInt % 2);
-        
+
         Assert.Equal(1, moduloResult);
     }
-    
+
     [Fact]
     public void Test_Female_Even_Last_CprDigit()
     {
@@ -30,15 +30,15 @@ public class PersonalDataTest
         var lastDigitAsString = pd.Cpr.Last().ToString();
         var lastDigitAsInt = Int32.Parse(lastDigitAsString);
         var moduloResult = (lastDigitAsInt % 2);
-        
+
         Assert.Equal(0, moduloResult);
     }
-     [Fact]
+    [Fact]
     public void Test_StreetName_AlphabeticOnly()
     {
         var pd = new PersonalData();
         pd.SetAddress();
-        
+
         Assert.Matches("^[a-zA-ZæøåÆØÅ]+$", pd.StreetName);
     }
 
@@ -47,7 +47,7 @@ public class PersonalDataTest
     {
         var pd = new PersonalData();
         pd.SetAddress();
-        
+
         Assert.Matches(@"^\d{1,3}[A-Z]?$", pd.StreetNumber);
     }
 
@@ -83,7 +83,7 @@ public class PersonalDataTest
 
     [Fact]
     public void Test_Town_AlphabeticOnly()
-    {   
+    {
         var pd = new PersonalData();
         pd.SetAddress();
 
@@ -101,7 +101,7 @@ public class PersonalDataTest
 
         // Assert that the array contains exactly 6 elements (StreetName, StreetNumber, Floor, Door, ZipCode, Town)
         Assert.Equal(6, addressArray.Length);
-        
+
         Console.WriteLine(addressArray);
     }
 
@@ -124,7 +124,7 @@ public class PersonalDataTest
     public void Test_GenerateFakePersons_ValidNumberOfPersons()
     {
         var pd = new PersonalData();
-        
+
         // Generate 50 fake persons
         var persons = pd.GenerateFakePersons(50);
 
@@ -143,7 +143,7 @@ public class PersonalDataTest
             Assert.Matches(@"^\d{6}-\d{4}$", person.Cpr);
 
             // Check that the phone number format is correct
-            Assert.Matches(@"^\d{8}$", person.PhoneNumber);
+            Assert.Matches(@"^\d{2} \d{2} \d{2} \d{2}$", person.PhoneNumber);
 
             // Check that the address is valid
             Assert.False(string.IsNullOrEmpty(person.StreetName), "Street name should not be null or empty");
@@ -171,9 +171,41 @@ public class PersonalDataTest
         var pd = new PersonalData();
 
         string dateString = pd.DateOfBirth.ToString();
-        string dateStringToCpr = dateString.Substring(0, 2) + dateString.Substring(3, 2)+ dateString.Substring(8, 2);
-        string cpr = pd.Cpr.Substring(0,6);
+        string dateStringToCpr = dateString.Substring(0, 2) + dateString.Substring(3, 2) + dateString.Substring(8, 2);
+        string cpr = pd.Cpr.Substring(0, 6);
 
-        Assert.Equal(cpr,dateStringToCpr);
+        Assert.Equal(cpr, dateStringToCpr);
     }
+
+    [Fact]
+    public void Test_PhoneNumber_ValidFormat()
+    {
+        var pd = new PersonalData();
+        pd.SetPhoneNumber();
+        // Assert that the phone number format is correct
+        Assert.Matches(@"^\d{2} \d{2} \d{2} \d{2}$", pd.PhoneNumber);
+    }
+
+    [Fact]
+    public void Test_GenerateFakePersons_UniquePhoneNumbers()
+    {
+
+        var pd = new PersonalData();
+        var numberOfPersons = 100;
+
+        // Generate fake persons
+        var persons = pd.GenerateFakePersons(numberOfPersons);
+
+        // Create a HashSet to store unique phone numbers
+        var phoneNumbers = new HashSet<string>();
+
+        foreach (var person in persons)
+        {
+            // Attempt to add the phone number to the HashSet
+            // If the phone number is already present, the count will not increase
+            Assert.True(phoneNumbers.Add(person.PhoneNumber), "Duplicate phone number found: " + person.PhoneNumber);
+        }
+
+    }
+
 }

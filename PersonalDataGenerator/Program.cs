@@ -16,20 +16,22 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI(c => {
+    app.UseSwaggerUI(c =>
+    {
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "API v1");
         c.RoutePrefix = "swagger";  // Swagger is now served at /swagger
     });
 }
 
-app.UseCors(); 
+app.UseCors();
 
+app.UseDefaultFiles();   // Serve the default file, usually index.html or default.html
 app.UseStaticFiles();   // Serve static files (CSS, JS, etc.)
 
-app.UseRouting();       
+app.UseRouting();
 
-app.UseAuthorization(); 
+app.UseAuthorization();
 
-app.MapControllers();   
+app.MapControllers();
 
 app.Run();
