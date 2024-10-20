@@ -24,6 +24,9 @@ jobs:
       - name: make a build # making a build of our project
         run: dotnet build
 
+      - name: run the program # for selenium :) (hopefully, if it works)
+        run: dotnet run
+
       - name: run tests # running the tests
         run: dotnet test
   
