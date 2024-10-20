@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch: # now i can also manually execute it
 
 jobs:
   testJob1:

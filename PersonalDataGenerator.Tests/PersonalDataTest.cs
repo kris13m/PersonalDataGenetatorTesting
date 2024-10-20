@@ -166,19 +166,7 @@ public class PersonalDataTest
     }
 
     [Fact]
-    public void Test_DateOfBirth_Matches_CPR()
-    {
-        var pd = new PersonalData();
-
-        string dateString = pd.DateOfBirth.ToString();
-        string dateStringToCpr = dateString.Substring(0, 2) + dateString.Substring(3, 2) + dateString.Substring(8, 2);
-        string cpr = pd.Cpr.Substring(0, 6);
-
-        Assert.Equal(cpr, dateStringToCpr);
-    }
-
-    [Fact]
-    public void Test_CPR_has_format_ddMMyy()
+    public void Test_CPR_has_format_ddMMyy_and_matches_DateOfBirth()
     {
         var pd = new PersonalData();
 
