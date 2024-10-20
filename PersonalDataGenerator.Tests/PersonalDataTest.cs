@@ -178,6 +178,16 @@ public class PersonalDataTest
     }
 
     [Fact]
+    public void Test_CPR_has_format_ddMMyy()
+    {
+        var pd = new PersonalData();
+
+        Assert.Equal(pd.Cpr.ToString().Substring(0, 2), pd.DateOfBirth.Day.ToString("00"));
+        Assert.Equal(pd.Cpr.ToString().Substring(2, 2), pd.DateOfBirth.Month.ToString("00"));
+        Assert.Equal(pd.Cpr.ToString().Substring(4, 2), pd.DateOfBirth.Year.ToString().Substring(2, 2));
+    }
+
+    [Fact]
     public void Test_PhoneNumber_ValidFormat()
     {
         var pd = new PersonalData();
