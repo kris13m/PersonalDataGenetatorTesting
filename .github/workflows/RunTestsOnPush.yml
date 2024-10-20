@@ -1,13 +1,30 @@
 name: test_on_push
 
 on:
-  workflow_dispatch: #this allows me to manually execute it from within github actions
+  push:
+    branches:
+      - main
 
 jobs:
   testJob1:
     runs-on: ubuntu-latest # github will make an environment for us
     steps:
-      - name: return message
-        run: echo "it works" # how yaml writes out things
+      - name: check out # brings our project into the virtual environment
+        uses: actions/checkout@v3 
+  
+      - name: setup .net
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet version: '8.0.x'
+
+      - name: dependencies # this step installs dependencies
+        run: dotnet restore
+
+      - name: make a build # making a build of our project
+        run: dotnet build
+
+      - name: run tests # running the tests
+        run: dotnet test
+  
   
         
