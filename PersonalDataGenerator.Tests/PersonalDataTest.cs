@@ -121,6 +121,15 @@ public class PersonalDataTest
     }
 
     [Fact]
+    public void Test_PhoneNumber_ValidFormat()
+    {
+        var pd = new PersonalData();
+        pd.SetPhoneNumber();
+        // Assert that the phone number format is correct
+        Assert.Matches(@"^\d{2} \d{2} \d{2} \d{2}$", pd.PhoneNumber);
+    }
+
+    [Fact]
     public void Test_GenerateFakePersons_ValidNumberOfPersons()
     {
         var pd = new PersonalData();
@@ -166,22 +175,25 @@ public class PersonalDataTest
     }
 
     [Fact]
-    public void Test_CPR_has_format_ddMMyy_and_matches_DateOfBirth()
+    public void Test_DateOfBirth_Matches_CPR()
+    {
+        var pd = new PersonalData();
+
+        string dateString = pd.DateOfBirth.ToString();
+        string dateStringToCpr = dateString.Substring(0, 2) + dateString.Substring(3, 2) + dateString.Substring(8, 2);
+        string cpr = pd.Cpr.Substring(0, 6);
+
+        Assert.Equal(cpr, dateStringToCpr);
+    }
+
+    [Fact]
+    public void Test_CPR_has_format_ddMMyy()
     {
         var pd = new PersonalData();
 
         Assert.Equal(pd.Cpr.ToString().Substring(0, 2), pd.DateOfBirth.Day.ToString("00"));
         Assert.Equal(pd.Cpr.ToString().Substring(2, 2), pd.DateOfBirth.Month.ToString("00"));
         Assert.Equal(pd.Cpr.ToString().Substring(4, 2), pd.DateOfBirth.Year.ToString().Substring(2, 2));
-    }
-
-    [Fact]
-    public void Test_PhoneNumber_ValidFormat()
-    {
-        var pd = new PersonalData();
-        pd.SetPhoneNumber();
-        // Assert that the phone number format is correct
-        Assert.Matches(@"^\d{2} \d{2} \d{2} \d{2}$", pd.PhoneNumber);
     }
 
     [Fact]
