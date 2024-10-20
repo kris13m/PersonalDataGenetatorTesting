@@ -1,0 +1,13 @@
+name: test_on_push
+
+on:
+  workflow_dispatch: #this allows me to manually execute it from within github actions
+
+jobs:
+  testJob1:
+    runs-on: ubuntu-latest # github will make an environment for us
+    steps:
+      - name: return message
+        run: echo "it works" # how yaml writes out things
+  
+        
