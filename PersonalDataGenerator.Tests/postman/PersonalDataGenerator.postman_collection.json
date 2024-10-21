@@ -1,0 +1,1030 @@
+{
+	"info": {
+		"_postman_id": "407ecbd2-f2ad-4b86-812c-c11eef820081",
+		"name": "PersonalDataGenerator",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23142772"
+	},
+	"item": [
+		{
+			"name": "address",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Response time is less than 500ms\", function () {",
+							"  pm.expect(pm.response.responseTime).to.be.below(500);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Validate the schema of the response body\", function () {",
+							"    const responseData = pm.response.json();",
+							"",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData).to.have.property('streetName');",
+							"    pm.expect(responseData).to.have.property('streetNumber');",
+							"    pm.expect(responseData).to.have.property('floor');",
+							"    pm.expect(responseData).to.have.property('door');",
+							"    pm.expect(responseData).to.have.property('zipCode');",
+							"    pm.expect(responseData).to.have.property('town');",
+							"",
+							"    pm.expect(responseData.streetName).to.be.a('string');",
+							"    pm.expect(responseData.streetNumber).to.be.a('string');",
+							"    pm.expect(responseData.floor).to.be.a('string');",
+							"    pm.expect(responseData.door).to.be.a('string');",
+							"    pm.expect(responseData.zipCode).to.be.a('string');",
+							"    pm.expect(responseData.town).to.be.a('string');",
+							"",
+							"    // Add more property checks as per the schema",
+							"});",
+							"pm.test(\"Response content type is application/json\", function () {",
+							"    pm.expect(pm.response.headers.get('Content-Type')).to.include('application/json');",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}address",
+					"host": [
+						"{{BASE_URL}}address"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "address",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}address",
+							"host": [
+								"{{BASE_URL}}address"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 21 Oct 2024 12:31:19 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"streetName\": \"DStSvHSoE\",\n    \"streetNumber\": \"144Q\",\n    \"floor\": \"st\",\n    \"door\": \"mf\",\n    \"zipCode\": \"5856\",\n    \"town\": \"Ryslinge\"\n}"
+				},
+				{
+					"name": "address",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}address",
+							"host": [
+								"{{BASE_URL}}address"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 21 Oct 2024 12:31:19 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"streetName\": \"DStSvHSoE\",\n    \"streetNumber\": \"144Q\",\n    \"floor\": \"st\",\n    \"door\": \"mf\",\n    \"zipCode\": \"5856\",\n    \"town\": \"Ryslinge\"\n}"
+				},
+				{
+					"name": "address",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}address",
+							"host": [
+								"{{BASE_URL}}address"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 21 Oct 2024 12:31:19 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"streetName\": \"DStSvHSoE\",\n    \"streetNumber\": \"144Q\",\n    \"floor\": \"st\",\n    \"door\": \"mf\",\n    \"zipCode\": \"5856\",\n    \"town\": \"Ryslinge\"\n}"
+				},
+				{
+					"name": "address",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}address",
+							"host": [
+								"{{BASE_URL}}address"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 21 Oct 2024 12:33:31 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"streetName\": \"aejXa\",\n    \"streetNumber\": \"16R\",\n    \"floor\": \"st\",\n    \"door\": \"mf\",\n    \"zipCode\": \"7600\",\n    \"town\": \"Struer\"\n}"
+				}
+			]
+		},
+		{
+			"name": "cpr",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Response body is not empty\", function () {",
+							"    pm.response.to.not.be.eql(JSON.stringify({cpr: \"\"}));",
+							"});",
+							"",
+							"// Updated response time test to 500ms",
+							"pm.test(\"Response time is less than 500ms\", function () {",
+							"  pm.expect(pm.response.responseTime).to.be.below(500);",
+							"});",
+							"",
+							"pm.test(\"Response data is correct\", function () {",
+							"    const responseData = pm.response.json();",
+							"    pm.expect(responseData).to.have.property('cpr').that.is.a('string').and.not.empty;",
+							"});",
+							"pm.test(\"Response data is in the exact format '250885-8716'\", function () {",
+							"    const responseData = pm.response.json().cpr;",
+							"    pm.expect(responseData).to.match(/^\\d{6}-\\d{4}$/);",
+							"});",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}cpr",
+					"host": [
+						"{{BASE_URL}}cpr"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "cpr",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}cpr",
+							"host": [
+								"{{BASE_URL}}cpr"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 21 Oct 2024 12:37:01 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"cpr\": \"120243-1892\"\n}"
+				}
+			]
+		},
+		{
+			"name": "name-gender",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Response body is not empty\", function () {",
+							"    pm.response.to.not.be.eql(JSON.stringify({cpr: \"\"}));",
+							"});",
+							"",
+							"// Updated response time test to 500ms",
+							"pm.test(\"Response time is less than 500ms\", function () {",
+							"  pm.expect(pm.response.responseTime).to.be.below(500);",
+							"});",
+							"",
+							"pm.test(\"Response data is correct\", function () {",
+							"    const responseData = pm.response.json();",
+							"    pm.expect(responseData).to.have.property('firstName').that.is.a('string').and.not.empty;",
+							"    pm.expect(responseData).to.have.property('surName').that.is.a('string').and.not.empty;",
+							"    pm.expect(responseData).to.have.property('gender').that.is.a('string').and.not.empty;",
+							"});",
+							"",
+							"pm.test(\"Response data is either male or female\", function () {",
+							"    const responseData = pm.response.json();",
+							"    pm.expect(responseData.gender).to.be.oneOf([\"male\", \"female\"]);",
+							"});",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}name-gender",
+					"host": [
+						"{{BASE_URL}}name-gender"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "name-gender",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}name-gender",
+							"host": [
+								"{{BASE_URL}}name-gender"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 21 Oct 2024 12:37:07 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"firstName\": \"Emil E.\",\n    \"surName\": \"Paulsen\",\n    \"gender\": \"male\"\n}"
+				}
+			]
+		},
+		{
+			"name": "cpr-name-gender",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Response body is not empty\", function () {",
+							"    pm.response.to.not.be.eql(JSON.stringify({cpr: \"\"}));",
+							"});",
+							"",
+							"// Updated response time test to 500ms",
+							"pm.test(\"Response time is less than 500ms\", function () {",
+							"  pm.expect(pm.response.responseTime).to.be.below(500);",
+							"});",
+							"",
+							"pm.test(\"Response data is correct\", function () {",
+							"    const responseData = pm.response.json();",
+							"    pm.expect(responseData).to.have.property('firstName').that.is.a('string').and.not.empty;",
+							"    pm.expect(responseData).to.have.property('surName').that.is.a('string').and.not.empty;",
+							"    pm.expect(responseData).to.have.property('gender').that.is.a('string').and.not.empty;",
+							"    pm.expect(responseData).to.have.property('cpr').that.is.a('string').and.not.empty;",
+							"});",
+							"",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}cpr-name-gender",
+					"host": [
+						"{{BASE_URL}}cpr-name-gender"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "cpr-name-gender",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}cpr-name-gender",
+							"host": [
+								"{{BASE_URL}}cpr-name-gender"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 21 Oct 2024 12:37:10 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"cpr\": \"270549-2517\",\n    \"firstName\": \"Simon L.\",\n    \"surName\": \"Østergaard\",\n    \"gender\": \"male\"\n}"
+				}
+			]
+		},
+		{
+			"name": "name-gender-dob",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"// Updated response time test to 500ms",
+							"pm.test(\"Response time is less than 500ms\", function () {",
+							"  pm.expect(pm.response.responseTime).to.be.below(500);",
+							"});",
+							"",
+							"pm.test(\"Response should contain First Name, Last Name, Gender, and Date of Birth\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData).to.have.property(\"firstName\");",
+							"    pm.expect(jsonData).to.have.property(\"surName\");",
+							"    pm.expect(jsonData).to.have.property(\"gender\");",
+							"    pm.expect(jsonData).to.have.property(\"dateOfBirth\");",
+							"    ",
+							"    pm.expect(jsonData.firstName).to.be.a('string');",
+							"    pm.expect(jsonData.surName).to.be.a('string');",
+							"    pm.expect(jsonData.gender).to.be.oneOf(['male', 'female']);",
+							"    pm.expect(jsonData.dateOfBirth).to.be.a('string');  // Adjust depending on how date is formatted",
+							"});",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}name-gender-dob",
+					"host": [
+						"{{BASE_URL}}name-gender-dob"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "name-gender-dob",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}name-gender-dob",
+							"host": [
+								"{{BASE_URL}}name-gender-dob"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 21 Oct 2024 12:37:13 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"firstName\": \"Marie A.\",\n    \"surName\": \"Skov\",\n    \"gender\": \"female\",\n    \"dateOfBirth\": \"1978-03-29\"\n}"
+				}
+			]
+		},
+		{
+			"name": "cpr-name-gender-dob",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"// Updated response time test to 500ms",
+							"pm.test(\"Response time is less than 500ms\", function () {",
+							"  pm.expect(pm.response.responseTime).to.be.below(500);",
+							"});",
+							"",
+							"pm.test(\"Response should contain First Name, Last Name, Gender, and Date of Birth\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData).to.have.property(\"cpr\");",
+							"    pm.expect(jsonData).to.have.property(\"firstName\");",
+							"    pm.expect(jsonData).to.have.property(\"surName\");",
+							"    pm.expect(jsonData).to.have.property(\"gender\");",
+							"    pm.expect(jsonData).to.have.property(\"dateOfBirth\");",
+							"    ",
+							"    pm.expect(jsonData.cpr).to.be.a('string');",
+							"    pm.expect(jsonData.surName).to.be.a('string');",
+							"    pm.expect(jsonData.gender).to.be.oneOf(['male', 'female']);",
+							"    pm.expect(jsonData.dateOfBirth).to.be.a('string');  // Adjust depending on how date is formatted",
+							"});",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}cpr-name-gender-dob",
+					"host": [
+						"{{BASE_URL}}cpr-name-gender-dob"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "cpr-name-gender-dob",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}cpr-name-gender-dob",
+							"host": [
+								"{{BASE_URL}}cpr-name-gender-dob"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 21 Oct 2024 12:37:16 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"cpr\": \"200494-1264\",\n    \"firstName\": \"Freja O.\",\n    \"surName\": \"Thygesen\",\n    \"gender\": \"female\",\n    \"dateOfBirth\": \"1994-04-20\"\n}"
+				}
+			]
+		},
+		{
+			"name": "phonenumber",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Response should contain a valid phone number\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData).to.have.property(\"phoneNumber\");",
+							"    pm.expect(jsonData.phoneNumber).to.be.a('string');",
+							"    pm.expect(jsonData.phoneNumber).to.have.lengthOf(11);",
+							"});",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}phonenumber",
+					"host": [
+						"{{BASE_URL}}phonenumber"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "phonenumber",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}phonenumber",
+							"host": [
+								"{{BASE_URL}}phonenumber"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 21 Oct 2024 12:37:18 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"phoneNumber\": \"53 89 01 14\"\n}"
+				}
+			]
+		},
+		{
+			"name": "persons",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 500ms\", function () {",
+							"  pm.expect(pm.response.responseTime).to.be.below(500);",
+							"});",
+							"",
+							"pm.test(\"Response should contain valid personal data\", function () {",
+							"    const responseData = pm.response.json();",
+							"    pm.expect(responseData).to.have.property(\"cpr\");",
+							"    pm.expect(responseData).to.have.property(\"firstName\");",
+							"    pm.expect(responseData).to.have.property(\"surName\");",
+							"    pm.expect(responseData).to.have.property(\"gender\");",
+							"    pm.expect(responseData).to.have.property(\"dateOfBirth\");",
+							"    pm.expect(responseData).to.have.property('streetName');",
+							"    pm.expect(responseData).to.have.property('streetNumber');",
+							"    pm.expect(responseData).to.have.property('floor');",
+							"    pm.expect(responseData).to.have.property('door');",
+							"    pm.expect(responseData).to.have.property('zipCode');",
+							"    pm.expect(responseData).to.have.property('town');",
+							"});",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}persons",
+					"host": [
+						"{{BASE_URL}}persons"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "persons",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}persons",
+							"host": [
+								"{{BASE_URL}}persons"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 21 Oct 2024 12:38:54 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"cpr\": \"240605-9568\",\n    \"dateOfBirth\": \"2005-06-24\",\n    \"firstName\": \"Naja F.\",\n    \"surName\": \"Jepsen\",\n    \"gender\": \"female\",\n    \"streetName\": \"NnrCeJåIzDtjtL\",\n    \"streetNumber\": \"432\",\n    \"floor\": \"st\",\n    \"door\": \"th\",\n    \"zipCode\": \"9490\",\n    \"town\": \"Pandrup\",\n    \"phoneNumber\": \"40 45 11 94\"\n}"
+				}
+			]
+		},
+		{
+			"name": "persons/1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Check that the status code is 400",
+							"pm.test(\"Status code is 400\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});",
+							"",
+							"// Check that the response contains the expected error message",
+							"pm.test(\"Response contains error message\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"The number of persons must be between 2 and 100.\");",
+							"});",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}persons/1",
+					"host": [
+						"{{BASE_URL}}persons"
+					],
+					"path": [
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "persons/1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}persons/1",
+							"host": [
+								"{{BASE_URL}}persons"
+							],
+							"path": [
+								"1"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 21 Oct 2024 12:38:57 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "The number of persons must be between 2 and 100."
+				}
+			]
+		},
+		{
+			"name": "persons/2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Ensure the response is an array (in case of bulk data)",
+							"let data = pm.response.json();",
+							"",
+							"// Check that the response contains exactly 2 persons",
+							"pm.test(\"Response contains exactly 2 persons\", function () {",
+							"    pm.expect(data).to.be.an('array').with.lengthOf(2);",
+							"});",
+							"",
+							"// Additional test: Check status code",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Response contain valid personal data\", function () {",
+							"     var responseJSON = pm.response.json();",
+							"     ",
+							"     pm.expect(responseJSON).to.be.an('array').that.is.not.empty;",
+							"     ",
+							"     responseJSON.forEach((person) => {",
+							"            pm.expect(person).to.be.an('object');",
+							"            pm.expect(person).to.have.property('cpr').that.is.a('string').and.is.not.empty;",
+							"            pm.expect(person).to.have.property('dateOfBirth').that.is.a('string').and.is.not.empty;",
+							"            pm.expect(person).to.have.property('firstName').that.is.a('string').and.is.not.empty;",
+							"            pm.expect(person).to.have.property('surName').that.is.a('string').and.is.not.empty;",
+							"            pm.expect(person).to.have.property('gender').that.is.a('string').and.is.not.empty;",
+							"            pm.expect(person).to.have.property('streetName').that.is.a('string').and.is.not.empty;",
+							"            pm.expect(person).to.have.property('streetNumber').that.is.a('string').and.is.not.empty;",
+							"            pm.expect(person).to.have.property('floor').that.is.a('string');",
+							"            pm.expect(person).to.have.property('door').that.is.null;",
+							"            pm.expect(person).to.have.property('zipCode').that.is.a('string').and.is.not.empty;",
+							"            pm.expect(person).to.have.property('town').that.is.a('string').and.is.not.empty;",
+							"            pm.expect(person).to.have.property('phoneNumber').that.is.a('string').and.is.not.empty;",
+							"     });",
+							"});",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}persons/2",
+					"host": [
+						"{{BASE_URL}}persons"
+					],
+					"path": [
+						"2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "persons/2",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}persons/2",
+							"host": [
+								"{{BASE_URL}}persons"
+							],
+							"path": [
+								"2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 21 Oct 2024 12:39:01 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"cpr\": \"020905-1693\",\n        \"dateOfBirth\": \"2005-09-02\",\n        \"firstName\": \"Adam L.\",\n        \"surName\": \"Bertelsen\",\n        \"gender\": \"male\",\n        \"streetName\": \"DåAtfz\",\n        \"streetNumber\": \"102\",\n        \"floor\": \"st\",\n        \"door\": null,\n        \"zipCode\": \"4941\",\n        \"town\": \"Bandholm\",\n        \"phoneNumber\": \"59 79 02 17\"\n    },\n    {\n        \"cpr\": \"241201-9138\",\n        \"dateOfBirth\": \"2001-12-24\",\n        \"firstName\": \"Trine P.\",\n        \"surName\": \"Thorsen\",\n        \"gender\": \"female\",\n        \"streetName\": \"lUPdqbTSrNUNs\",\n        \"streetNumber\": \"343L\",\n        \"floor\": \"99\",\n        \"door\": null,\n        \"zipCode\": \"4540\",\n        \"town\": \"Fårevejle\",\n        \"phoneNumber\": \"41 26 57 70\"\n    }\n]"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BASE_URL",
+			"value": "http://localhost:5268/api/Personaldata/",
+			"type": "string"
+		},
+		{
+			"key": "MOCK_URL",
+			"value": "https://09dafbfb-e8e8-440b-b147-407bc321d019.mock.pstmn.io/api/PersonalData/",
+			"type": "string"
+		}
+	]
+}

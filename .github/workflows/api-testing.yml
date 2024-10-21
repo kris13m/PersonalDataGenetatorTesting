@@ -1,0 +1,45 @@
+name: API Testing Workflow
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  api-test:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Check out the repository
+        uses: actions/checkout@v3
+
+      - name: Setup .NET Core SDK
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Install dependencies
+        run: dotnet restore PersonalDataGenerator/PersonalDataGenerator.csproj
+
+      - name: Build the application
+        run: dotnet build PersonalDataGenerator/PersonalDataGenerator.csproj --configuration Release
+
+      - name: Start the API
+        run: |
+          nohup dotnet run --project ./PersonalDataGenerator/PersonalDataGenerator.csproj --urls http://localhost:5268 &
+        env:
+          ASPNETCORE_URLS: http://localhost:5268
+        continue-on-error: true  # Continue even if this step fails
+
+      - name: Install Newman
+        run: npm install -g newman
+
+      - name: Run Postman tests with Newman
+        run: |
+          newman run PersonalDataGenerator.Tests/postman/PersonalDataGenerator.postman_collection.json \
+            --env-var baseUrl="http://localhost:5268" \
+            --reporters cli,junit
