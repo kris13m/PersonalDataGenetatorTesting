@@ -105,7 +105,7 @@ public class PersonalData
                 }
                 break;
             case "female":
-                // if female has even number
+                // if female has uneven number
                 if (lastDigit % 2 == 1)
                 {
                     if (lastDigit >= 5)
