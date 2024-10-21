@@ -1,6 +1,6 @@
 {
   "PersonalDataGenerator.dll": {
-    "/Users/kristianhadberg/Documents/KEASWD/testing/PersonalDataGenetatorTesting/PersonalDataGenerator/Program.cs": {
+    "C:\\Users\\Kristian\\Desktop\\PersonalDataGenetatorTesting\\PersonalDataGenerator\\Program.cs": {
       "Program": {
         "System.Void Program::<Main>$(System.String[])": {
           "Lines": {
@@ -50,7 +50,7 @@
         }
       }
     },
-    "/Users/kristianhadberg/Documents/KEASWD/testing/PersonalDataGenetatorTesting/PersonalDataGenerator/AddressReader.cs": {
+    "C:\\Users\\Kristian\\Desktop\\PersonalDataGenetatorTesting\\PersonalDataGenerator\\AddressReader.cs": {
       "PersonalDataGenerator.PostalCodeAndTown": {
         "System.String PersonalDataGenerator.PostalCodeAndTown::get_ZipCode()": {
           "Lines": {
@@ -141,7 +141,7 @@
         }
       }
     },
-    "/Users/kristianhadberg/Documents/KEASWD/testing/PersonalDataGenetatorTesting/PersonalDataGenerator/NameAndGenderReader.cs": {
+    "C:\\Users\\Kristian\\Desktop\\PersonalDataGenetatorTesting\\PersonalDataGenerator\\NameAndGenderReader.cs": {
       "PersonalDataGenerator.Persons": {
         "System.Collections.Generic.List`1<PersonalDataGenerator.NameAndGender> PersonalDataGenerator.Persons::get_NameAndGenderList()": {
           "Lines": {
@@ -214,7 +214,7 @@
         }
       }
     },
-    "/Users/kristianhadberg/Documents/KEASWD/testing/PersonalDataGenetatorTesting/PersonalDataGenerator/PersonalData.cs": {
+    "C:\\Users\\Kristian\\Desktop\\PersonalDataGenetatorTesting\\PersonalDataGenerator\\PersonalData.cs": {
       "PersonalDataGenerator.PersonalData": {
         "System.String PersonalDataGenerator.PersonalData::get_Cpr()": {
           "Lines": {
@@ -254,7 +254,7 @@
         },
         "System.String PersonalDataGenerator.PersonalData::get_StreetNumber()": {
           "Lines": {
-            "16": 408
+            "16": 392
           },
           "Branches": []
         },
@@ -368,16 +368,16 @@
             "61": 165,
             "62": 165,
             "65": 165,
-            "66": 91,
-            "67": 91,
-            "68": 91,
-            "69": 74,
-            "70": 63,
-            "71": 63,
-            "72": 63,
-            "74": 11,
-            "75": 11,
-            "76": 11,
+            "66": 95,
+            "67": 95,
+            "68": 95,
+            "69": 70,
+            "70": 58,
+            "71": 58,
+            "72": 58,
+            "74": 12,
+            "75": 12,
+            "76": 12,
             "78": 165,
             "79": 165,
             "80": 165
@@ -389,7 +389,7 @@
               "EndOffset": 155,
               "Path": 0,
               "Ordinal": 0,
-              "Hits": 91
+              "Hits": 95
             },
             {
               "Line": 65,
@@ -397,7 +397,7 @@
               "EndOffset": 175,
               "Path": 1,
               "Ordinal": 1,
-              "Hits": 74
+              "Hits": 70
             },
             {
               "Line": 69,
@@ -405,7 +405,7 @@
               "EndOffset": 188,
               "Path": 0,
               "Ordinal": 2,
-              "Hits": 63
+              "Hits": 58
             },
             {
               "Line": 69,
@@ -413,7 +413,7 @@
               "EndOffset": 208,
               "Path": 1,
               "Ordinal": 3,
-              "Hits": 11
+              "Hits": 12
             }
           ]
         },
@@ -426,28 +426,28 @@
             "88": 167,
             "89": 167,
             "91": 167,
-            "95": 92,
-            "96": 40,
-            "97": 40,
-            "98": 18,
-            "99": 18,
-            "100": 18,
-            "102": 22,
-            "103": 22,
-            "104": 22,
-            "105": 40,
-            "106": 92,
-            "109": 75,
+            "95": 87,
+            "96": 41,
+            "97": 41,
+            "98": 17,
+            "99": 17,
+            "100": 17,
+            "102": 24,
+            "103": 24,
+            "104": 24,
+            "105": 41,
+            "106": 87,
+            "109": 80,
             "110": 43,
             "111": 43,
-            "112": 21,
-            "113": 21,
-            "114": 21,
-            "116": 22,
-            "117": 22,
-            "118": 22,
+            "112": 26,
+            "113": 26,
+            "114": 26,
+            "116": 17,
+            "117": 17,
+            "118": 17,
             "119": 43,
-            "120": 75,
+            "120": 80,
             "123": 167,
             "125": 167,
             "126": 167
@@ -459,7 +459,7 @@
               "EndOffset": 109,
               "Path": 0,
               "Ordinal": 0,
-              "Hits": 75
+              "Hits": 80
             },
             {
               "Line": 91,
@@ -467,7 +467,7 @@
               "EndOffset": 125,
               "Path": 1,
               "Ordinal": 1,
-              "Hits": 92
+              "Hits": 87
             },
             {
               "Line": 95,
@@ -475,7 +475,7 @@
               "EndOffset": 138,
               "Path": 0,
               "Ordinal": 4,
-              "Hits": 40
+              "Hits": 41
             },
             {
               "Line": 97,
@@ -483,7 +483,7 @@
               "EndOffset": 153,
               "Path": 0,
               "Ordinal": 6,
-              "Hits": 18
+              "Hits": 17
             },
             {
               "Line": 97,
@@ -491,7 +491,7 @@
               "EndOffset": 163,
               "Path": 1,
               "Ordinal": 7,
-              "Hits": 22
+              "Hits": 24
             },
             {
               "Line": 91,
@@ -499,7 +499,7 @@
               "EndOffset": 174,
               "Path": 1,
               "Ordinal": 3,
-              "Hits": 75
+              "Hits": 80
             },
             {
               "Line": 109,
@@ -515,7 +515,7 @@
               "EndOffset": 202,
               "Path": 0,
               "Ordinal": 10,
-              "Hits": 21
+              "Hits": 26
             },
             {
               "Line": 111,
@@ -523,7 +523,7 @@
               "EndOffset": 212,
               "Path": 1,
               "Ordinal": 11,
-              "Hits": 22
+              "Hits": 17
             },
             {
               "Line": 91,
@@ -570,10 +570,10 @@
             "143": 173,
             "145": 173,
             "146": 173,
-            "147": 91,
-            "148": 91,
-            "149": 91,
-            "150": 91,
+            "147": 83,
+            "148": 83,
+            "149": 83,
+            "150": 83,
             "153": 173,
             "156": 173,
             "157": 173,
@@ -596,63 +596,63 @@
               "EndOffset": 88,
               "Path": 0,
               "Ordinal": 0,
-              "Hits": 91
+              "Hits": 83
             },
             {
               "Line": 146,
               "Offset": 86,
-              "EndOffset": 133,
+              "EndOffset": 142,
               "Path": 1,
               "Ordinal": 1,
               "Hits": 173
             },
             {
               "Line": 153,
-              "Offset": 147,
-              "EndOffset": 149,
+              "Offset": 156,
+              "EndOffset": 158,
               "Path": 0,
               "Ordinal": 2,
-              "Hits": 78
+              "Hits": 82
             },
             {
               "Line": 153,
-              "Offset": 147,
-              "EndOffset": 173,
+              "Offset": 156,
+              "EndOffset": 182,
               "Path": 1,
               "Ordinal": 3,
-              "Hits": 95
+              "Hits": 91
             },
             {
               "Line": 157,
-              "Offset": 235,
-              "EndOffset": 237,
+              "Offset": 244,
+              "EndOffset": 246,
               "Path": 0,
               "Ordinal": 4,
               "Hits": 83
             },
             {
               "Line": 157,
-              "Offset": 235,
-              "EndOffset": 267,
+              "Offset": 244,
+              "EndOffset": 276,
               "Path": 1,
               "Ordinal": 5,
               "Hits": 90
             },
             {
               "Line": 164,
-              "Offset": 300,
-              "EndOffset": 302,
+              "Offset": 309,
+              "EndOffset": 311,
               "Path": 0,
               "Ordinal": 6,
-              "Hits": 40
+              "Hits": 50
             },
             {
               "Line": 164,
-              "Offset": 300,
-              "EndOffset": 365,
+              "Offset": 309,
+              "EndOffset": 374,
               "Path": 1,
               "Ordinal": 7,
-              "Hits": 50
+              "Hits": 40
             }
           ]
         },
@@ -676,7 +676,7 @@
           "Lines": {
             "186": 173,
             "188": 173,
-            "189": 1786,
+            "189": 1824,
             "190": 173
           },
           "Branches": []
@@ -687,10 +687,10 @@
             "196": 166,
             "199": 166,
             "200": 166,
-            "202": 2046,
-            "203": 857,
-            "204": 857,
-            "205": 857,
+            "202": 2064,
+            "203": 866,
+            "204": 866,
+            "205": 866,
             "208": 166,
             "209": 166,
             "210": 166,
@@ -705,7 +705,7 @@
               "EndOffset": 39,
               "Path": 1,
               "Ordinal": 1,
-              "Hits": 857
+              "Hits": 866
             },
             {
               "Line": 202,
@@ -719,10 +719,10 @@
         },
         "System.Int32 PersonalDataGenerator.PersonalData::GetRandomDigit()": {
           "Lines": {
-            "225": 857,
-            "226": 857,
-            "227": 857,
-            "228": 857
+            "225": 866,
+            "226": 866,
+            "227": 866,
+            "228": 866
           },
           "Branches": []
         },
@@ -757,7 +757,7 @@
         }
       }
     },
-    "/Users/kristianhadberg/Documents/KEASWD/testing/PersonalDataGenetatorTesting/PersonalDataGenerator/Dto/PersonalDataDto.cs": {
+    "C:\\Users\\Kristian\\Desktop\\PersonalDataGenetatorTesting\\PersonalDataGenerator\\Dto\\PersonalDataDto.cs": {
       "PersonalDataGenerator.Dto.PersonalDataDto": {
         "System.String PersonalDataGenerator.Dto.PersonalDataDto::get_Cpr()": {
           "Lines": {
@@ -1059,7 +1059,7 @@
         }
       }
     },
-    "/Users/kristianhadberg/Documents/KEASWD/testing/PersonalDataGenetatorTesting/PersonalDataGenerator/Controllers/PersonalDataController.cs": {
+    "C:\\Users\\Kristian\\Desktop\\PersonalDataGenetatorTesting\\PersonalDataGenerator\\Controllers\\PersonalDataController.cs": {
       "PersonalDataGenerator.Controllers.PersonalDataController": {
         "PersonalDataGenerator.Dto.CprDto PersonalDataGenerator.Controllers.PersonalDataController::GetCpr()": {
           "Lines": {

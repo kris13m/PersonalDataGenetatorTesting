@@ -4,6 +4,57 @@ namespace PersonalDataGenerator.Tests;
 
 public class PersonalDataTest
 {
+    [Theory]
+    [InlineData(2)]
+    [InlineData(3)]
+    [InlineData(50)]
+    [InlineData(99)]
+    [InlineData(100)]
+    public void Test_GenerateFakePersons_ValidNumberOfPersons(int amountOfPersons)
+    {
+        var pd = new PersonalData();
+
+        // Generate a number of fake persons
+        var persons = pd.GenerateFakePersons(amountOfPersons);
+
+        // Assert that the number of persons were generated
+        Assert.Equal(amountOfPersons, persons.Count);
+
+        // Check that each person has a valid CPR, FirstName, SurName, and Gender
+        foreach (var person in persons)
+        {
+            Assert.False(string.IsNullOrEmpty(person.Cpr), "CPR should not be null or empty");
+            Assert.False(string.IsNullOrEmpty(person.FirstName), "First name should not be null or empty");
+            Assert.False(string.IsNullOrEmpty(person.SurName), "Surname should not be null or empty");
+            Assert.False(string.IsNullOrEmpty(person.Gender), "Gender should not be null or empty");
+
+            // Check that the CPR format is correct
+            Assert.Matches(@"^\d{6}-\d{4}$", person.Cpr);
+
+            // Check that the phone number format is correct
+            Assert.Matches(@"^\d{2} \d{2} \d{2} \d{2}$", person.PhoneNumber);
+
+            // Check that the address is valid
+            Assert.False(string.IsNullOrEmpty(person.StreetName), "Street name should not be null or empty");
+            Assert.False(string.IsNullOrEmpty(person.StreetNumber), "Street number should not be null or empty");
+            Assert.False(string.IsNullOrEmpty(person.ZipCode), "ZipCode should not be null or empty");
+            Assert.False(string.IsNullOrEmpty(person.Town), "Town should not be null or empty");
+        }
+    }
+
+    [Fact]
+    public void Test_GenerateFakePersons_InvalidNumberOfPersons_ThrowsException()
+    {
+        var pd = new PersonalData();
+
+        // Assert that an exception is thrown for less than 2 persons
+        Assert.Throws<ArgumentOutOfRangeException>(() => pd.GenerateFakePersons(1));
+
+        // Assert that an exception is thrown for more than 100 persons
+        Assert.Throws<ArgumentOutOfRangeException>(() => pd.GenerateFakePersons(101));
+    }
+    
+    
     [Fact]
     public void Test_Male_Uneven_Last_CprDigit()
     {
@@ -128,52 +179,7 @@ public class PersonalDataTest
         // Assert that the phone number format is correct
         Assert.Matches(@"^\d{2} \d{2} \d{2} \d{2}$", pd.PhoneNumber);
     }
-
-    [Fact]
-    public void Test_GenerateFakePersons_ValidNumberOfPersons()
-    {
-        var pd = new PersonalData();
-
-        // Generate 50 fake persons
-        var persons = pd.GenerateFakePersons(50);
-
-        // Assert that 50 persons were generated
-        Assert.Equal(50, persons.Count);
-
-        // Check that each person has a valid CPR, FirstName, SurName, and Gender
-        foreach (var person in persons)
-        {
-            Assert.False(string.IsNullOrEmpty(person.Cpr), "CPR should not be null or empty");
-            Assert.False(string.IsNullOrEmpty(person.FirstName), "First name should not be null or empty");
-            Assert.False(string.IsNullOrEmpty(person.SurName), "Surname should not be null or empty");
-            Assert.False(string.IsNullOrEmpty(person.Gender), "Gender should not be null or empty");
-
-            // Check that the CPR format is correct
-            Assert.Matches(@"^\d{6}-\d{4}$", person.Cpr);
-
-            // Check that the phone number format is correct
-            Assert.Matches(@"^\d{2} \d{2} \d{2} \d{2}$", person.PhoneNumber);
-
-            // Check that the address is valid
-            Assert.False(string.IsNullOrEmpty(person.StreetName), "Street name should not be null or empty");
-            Assert.False(string.IsNullOrEmpty(person.StreetNumber), "Street number should not be null or empty");
-            Assert.False(string.IsNullOrEmpty(person.ZipCode), "ZipCode should not be null or empty");
-            Assert.False(string.IsNullOrEmpty(person.Town), "Town should not be null or empty");
-        }
-    }
-
-    [Fact]
-    public void Test_GenerateFakePersons_InvalidNumberOfPersons_ThrowsException()
-    {
-        var pd = new PersonalData();
-
-        // Assert that an exception is thrown for less than 2 persons
-        Assert.Throws<ArgumentOutOfRangeException>(() => pd.GenerateFakePersons(1));
-
-        // Assert that an exception is thrown for more than 100 persons
-        Assert.Throws<ArgumentOutOfRangeException>(() => pd.GenerateFakePersons(101));
-    }
-
+    
     [Fact]
     public void Test_CPR_has_format_ddMMyy_and_matches_DateOfBirth()
     {
