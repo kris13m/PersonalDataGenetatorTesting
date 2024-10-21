@@ -1,0 +1,1270 @@
+{
+  "PersonalDataGenerator.dll": {
+    "/Users/kristianhadberg/Documents/KEASWD/testing/PersonalDataGenetatorTesting/PersonalDataGenerator/Program.cs": {
+      "Program": {
+        "System.Void Program::<Main>$(System.String[])": {
+          "Lines": {
+            "1": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "9": 0,
+            "10": 0,
+            "14": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "26": 0,
+            "28": 0,
+            "29": 0,
+            "31": 0,
+            "33": 0,
+            "35": 0,
+            "37": 0
+          },
+          "Branches": [
+            {
+              "Line": 16,
+              "Offset": 101,
+              "EndOffset": 103,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 16,
+              "Offset": 101,
+              "EndOffset": 151,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "/Users/kristianhadberg/Documents/KEASWD/testing/PersonalDataGenetatorTesting/PersonalDataGenerator/AddressReader.cs": {
+      "PersonalDataGenerator.PostalCodeAndTown": {
+        "System.String PersonalDataGenerator.PostalCodeAndTown::get_ZipCode()": {
+          "Lines": {
+            "7": 102070
+          },
+          "Branches": []
+        },
+        "System.String PersonalDataGenerator.PostalCodeAndTown::get_Town()": {
+          "Lines": {
+            "8": 102070
+          },
+          "Branches": []
+        }
+      },
+      "PersonalDataGenerator.AddressReader": {
+        "System.Collections.Generic.List`1<PersonalDataGenerator.PostalCodeAndTown> PersonalDataGenerator.AddressReader::get_PostalCodeAndTownList()": {
+          "Lines": {
+            "13": 102416
+          },
+          "Branches": []
+        },
+        "System.Void PersonalDataGenerator.AddressReader::ReadPostalCodesAndTowns()": {
+          "Lines": {
+            "22": 173,
+            "24": 173,
+            "25": 173,
+            "28": 173,
+            "31": 173,
+            "32": 0,
+            "33": 0,
+            "37": 173,
+            "40": 173,
+            "41": 173,
+            "43": 204313,
+            "44": 101897,
+            "45": 101897,
+            "46": 101897,
+            "47": 101897,
+            "48": 101897,
+            "49": 101897,
+            "50": 101897,
+            "51": 173
+          },
+          "Branches": [
+            {
+              "Line": 31,
+              "Offset": 64,
+              "EndOffset": 66,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 31,
+              "Offset": 64,
+              "EndOffset": 79,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 173
+            },
+            {
+              "Line": 43,
+              "Offset": 205,
+              "EndOffset": 115,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 101897
+            },
+            {
+              "Line": 43,
+              "Offset": 205,
+              "EndOffset": 207,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 173
+            }
+          ]
+        },
+        "System.Void PersonalDataGenerator.AddressReader::.ctor()": {
+          "Lines": {
+            "15": 173,
+            "16": 173,
+            "17": 173,
+            "18": 173,
+            "19": 173
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/Users/kristianhadberg/Documents/KEASWD/testing/PersonalDataGenetatorTesting/PersonalDataGenerator/NameAndGenderReader.cs": {
+      "PersonalDataGenerator.Persons": {
+        "System.Collections.Generic.List`1<PersonalDataGenerator.NameAndGender> PersonalDataGenerator.Persons::get_NameAndGenderList()": {
+          "Lines": {
+            "13": 330
+          },
+          "Branches": []
+        }
+      },
+      "PersonalDataGenerator.NameAndGender": {
+        "System.String PersonalDataGenerator.NameAndGender::get_FirstName()": {
+          "Lines": {
+            "23": 88605
+          },
+          "Branches": []
+        },
+        "System.String PersonalDataGenerator.NameAndGender::get_SurName()": {
+          "Lines": {
+            "25": 88605
+          },
+          "Branches": []
+        },
+        "System.String PersonalDataGenerator.NameAndGender::get_Gender()": {
+          "Lines": {
+            "27": 88605
+          },
+          "Branches": []
+        }
+      },
+      "PersonalDataGenerator.NameAndGenderReader": {
+        "System.Void PersonalDataGenerator.NameAndGenderReader::ReadNamesAndGendersFromJson()": {
+          "Lines": {
+            "41": 165,
+            "42": 165,
+            "43": 165,
+            "45": 165,
+            "47": 177375,
+            "48": 88440,
+            "49": 88440,
+            "50": 88440,
+            "51": 165
+          },
+          "Branches": [
+            {
+              "Line": 47,
+              "Offset": 69,
+              "EndOffset": 37,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 88440
+            },
+            {
+              "Line": 47,
+              "Offset": 69,
+              "EndOffset": 71,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 165
+            }
+          ]
+        },
+        "System.Void PersonalDataGenerator.NameAndGenderReader::.ctor()": {
+          "Lines": {
+            "33": 165,
+            "35": 165,
+            "36": 165,
+            "37": 165,
+            "38": 165
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/Users/kristianhadberg/Documents/KEASWD/testing/PersonalDataGenetatorTesting/PersonalDataGenerator/PersonalData.cs": {
+      "PersonalDataGenerator.PersonalData": {
+        "System.String PersonalDataGenerator.PersonalData::get_Cpr()": {
+          "Lines": {
+            "9": 272
+          },
+          "Branches": []
+        },
+        "System.DateOnly PersonalDataGenerator.PersonalData::get_DateOfBirth()": {
+          "Lines": {
+            "10": 335
+          },
+          "Branches": []
+        },
+        "System.String PersonalDataGenerator.PersonalData::get_FirstName()": {
+          "Lines": {
+            "11": 215
+          },
+          "Branches": []
+        },
+        "System.String PersonalDataGenerator.PersonalData::get_SurName()": {
+          "Lines": {
+            "12": 215
+          },
+          "Branches": []
+        },
+        "System.String PersonalDataGenerator.PersonalData::get_Gender()": {
+          "Lines": {
+            "13": 384
+          },
+          "Branches": []
+        },
+        "System.String PersonalDataGenerator.PersonalData::get_StreetName()": {
+          "Lines": {
+            "15": 226
+          },
+          "Branches": []
+        },
+        "System.String PersonalDataGenerator.PersonalData::get_StreetNumber()": {
+          "Lines": {
+            "16": 408
+          },
+          "Branches": []
+        },
+        "System.String PersonalDataGenerator.PersonalData::get_Floor()": {
+          "Lines": {
+            "17": 176
+          },
+          "Branches": []
+        },
+        "System.String PersonalDataGenerator.PersonalData::get_Door()": {
+          "Lines": {
+            "18": 176
+          },
+          "Branches": []
+        },
+        "System.String PersonalDataGenerator.PersonalData::get_ZipCode()": {
+          "Lines": {
+            "19": 226
+          },
+          "Branches": []
+        },
+        "System.String PersonalDataGenerator.PersonalData::get_Town()": {
+          "Lines": {
+            "20": 226
+          },
+          "Branches": []
+        },
+        "System.String PersonalDataGenerator.PersonalData::get_PhoneNumber()": {
+          "Lines": {
+            "22": 417
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<System.String> PersonalDataGenerator.PersonalData::get_AddressAsArray()": {
+          "Lines": {
+            "23": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<PersonalDataGenerator.PersonalData> PersonalDataGenerator.PersonalData::GenerateFakePersons(System.Int32)": {
+          "Lines": {
+            "36": 4,
+            "37": 4,
+            "38": 2,
+            "39": 2,
+            "42": 2,
+            "44": 304,
+            "45": 150,
+            "46": 150,
+            "47": 150,
+            "48": 150,
+            "50": 2,
+            "51": 2
+          },
+          "Branches": [
+            {
+              "Line": 37,
+              "Offset": 3,
+              "EndOffset": 5,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 3
+            },
+            {
+              "Line": 37,
+              "Offset": 3,
+              "EndOffset": 12,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            },
+            {
+              "Line": 37,
+              "Offset": 15,
+              "EndOffset": 17,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 2
+            },
+            {
+              "Line": 37,
+              "Offset": 15,
+              "EndOffset": 34,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 2
+            },
+            {
+              "Line": 44,
+              "Offset": 72,
+              "EndOffset": 44,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 150
+            },
+            {
+              "Line": 44,
+              "Offset": 72,
+              "EndOffset": 74,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 2
+            }
+          ]
+        },
+        "System.Void PersonalDataGenerator.PersonalData::SetDateOfBirth()": {
+          "Lines": {
+            "57": 165,
+            "58": 165,
+            "59": 165,
+            "61": 165,
+            "62": 165,
+            "65": 165,
+            "66": 91,
+            "67": 91,
+            "68": 91,
+            "69": 74,
+            "70": 63,
+            "71": 63,
+            "72": 63,
+            "74": 11,
+            "75": 11,
+            "76": 11,
+            "78": 165,
+            "79": 165,
+            "80": 165
+          },
+          "Branches": [
+            {
+              "Line": 65,
+              "Offset": 153,
+              "EndOffset": 155,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 91
+            },
+            {
+              "Line": 65,
+              "Offset": 153,
+              "EndOffset": 175,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 74
+            },
+            {
+              "Line": 69,
+              "Offset": 186,
+              "EndOffset": 188,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 63
+            },
+            {
+              "Line": 69,
+              "Offset": 186,
+              "EndOffset": 208,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 11
+            }
+          ]
+        },
+        "System.Void PersonalDataGenerator.PersonalData::SetCpr()": {
+          "Lines": {
+            "83": 167,
+            "84": 167,
+            "86": 167,
+            "87": 167,
+            "88": 167,
+            "89": 167,
+            "91": 167,
+            "95": 92,
+            "96": 40,
+            "97": 40,
+            "98": 18,
+            "99": 18,
+            "100": 18,
+            "102": 22,
+            "103": 22,
+            "104": 22,
+            "105": 40,
+            "106": 92,
+            "109": 75,
+            "110": 43,
+            "111": 43,
+            "112": 21,
+            "113": 21,
+            "114": 21,
+            "116": 22,
+            "117": 22,
+            "118": 22,
+            "119": 43,
+            "120": 75,
+            "123": 167,
+            "125": 167,
+            "126": 167
+          },
+          "Branches": [
+            {
+              "Line": 91,
+              "Offset": 107,
+              "EndOffset": 109,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 75
+            },
+            {
+              "Line": 91,
+              "Offset": 107,
+              "EndOffset": 125,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 92
+            },
+            {
+              "Line": 95,
+              "Offset": 136,
+              "EndOffset": 138,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 40
+            },
+            {
+              "Line": 97,
+              "Offset": 151,
+              "EndOffset": 153,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 18
+            },
+            {
+              "Line": 97,
+              "Offset": 151,
+              "EndOffset": 163,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 22
+            },
+            {
+              "Line": 91,
+              "Offset": 121,
+              "EndOffset": 174,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 75
+            },
+            {
+              "Line": 109,
+              "Offset": 185,
+              "EndOffset": 187,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 43
+            },
+            {
+              "Line": 111,
+              "Offset": 200,
+              "EndOffset": 202,
+              "Path": 0,
+              "Ordinal": 10,
+              "Hits": 21
+            },
+            {
+              "Line": 111,
+              "Offset": 200,
+              "EndOffset": 212,
+              "Path": 1,
+              "Ordinal": 11,
+              "Hits": 22
+            },
+            {
+              "Line": 91,
+              "Offset": 121,
+              "EndOffset": 223,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 167
+            },
+            {
+              "Line": 95,
+              "Offset": 136,
+              "EndOffset": 223,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 167
+            },
+            {
+              "Line": 109,
+              "Offset": 185,
+              "EndOffset": 223,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 167
+            }
+          ]
+        },
+        "System.Void PersonalDataGenerator.PersonalData::SetNameAndGender()": {
+          "Lines": {
+            "129": 165,
+            "130": 165,
+            "131": 165,
+            "133": 165,
+            "134": 165,
+            "135": 165,
+            "136": 165
+          },
+          "Branches": []
+        },
+        "System.Void PersonalDataGenerator.PersonalData::SetAddress()": {
+          "Lines": {
+            "139": 173,
+            "140": 173,
+            "143": 173,
+            "145": 173,
+            "146": 173,
+            "147": 91,
+            "148": 91,
+            "149": 91,
+            "150": 91,
+            "153": 173,
+            "156": 173,
+            "157": 173,
+            "158": 83,
+            "159": 83,
+            "160": 83,
+            "162": 90,
+            "163": 90,
+            "164": 90,
+            "165": 90,
+            "167": 173,
+            "168": 173,
+            "169": 173,
+            "171": 173
+          },
+          "Branches": [
+            {
+              "Line": 146,
+              "Offset": 86,
+              "EndOffset": 88,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 91
+            },
+            {
+              "Line": 146,
+              "Offset": 86,
+              "EndOffset": 133,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 173
+            },
+            {
+              "Line": 153,
+              "Offset": 147,
+              "EndOffset": 149,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 78
+            },
+            {
+              "Line": 153,
+              "Offset": 147,
+              "EndOffset": 173,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 95
+            },
+            {
+              "Line": 157,
+              "Offset": 235,
+              "EndOffset": 237,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 83
+            },
+            {
+              "Line": 157,
+              "Offset": 235,
+              "EndOffset": 267,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 90
+            },
+            {
+              "Line": 164,
+              "Offset": 300,
+              "EndOffset": 302,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 40
+            },
+            {
+              "Line": 164,
+              "Offset": 300,
+              "EndOffset": 365,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 50
+            }
+          ]
+        },
+        "System.String[] PersonalDataGenerator.PersonalData::GetAddressAsArray()": {
+          "Lines": {
+            "173": 2,
+            "174": 2,
+            "175": 2,
+            "176": 2,
+            "177": 2,
+            "178": 2,
+            "179": 2,
+            "180": 2,
+            "181": 2,
+            "182": 2,
+            "183": 2
+          },
+          "Branches": []
+        },
+        "System.String PersonalDataGenerator.PersonalData::GenerateRandomAlphabeticString(System.Int32)": {
+          "Lines": {
+            "186": 173,
+            "188": 173,
+            "189": 1786,
+            "190": 173
+          },
+          "Branches": []
+        },
+        "System.Void PersonalDataGenerator.PersonalData::SetPhoneNumber()": {
+          "Lines": {
+            "195": 166,
+            "196": 166,
+            "199": 166,
+            "200": 166,
+            "202": 2046,
+            "203": 857,
+            "204": 857,
+            "205": 857,
+            "208": 166,
+            "209": 166,
+            "210": 166,
+            "211": 166,
+            "212": 166,
+            "213": 166
+          },
+          "Branches": [
+            {
+              "Line": 202,
+              "Offset": 76,
+              "EndOffset": 39,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 857
+            },
+            {
+              "Line": 202,
+              "Offset": 76,
+              "EndOffset": 78,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 166
+            }
+          ]
+        },
+        "System.Int32 PersonalDataGenerator.PersonalData::GetRandomDigit()": {
+          "Lines": {
+            "225": 857,
+            "226": 857,
+            "227": 857,
+            "228": 857
+          },
+          "Branches": []
+        },
+        "System.Void PersonalDataGenerator.PersonalData::.ctor()": {
+          "Lines": {
+            "7": 165,
+            "8": 165,
+            "25": 165,
+            "26": 165,
+            "27": 165,
+            "28": 165,
+            "29": 165,
+            "30": 165,
+            "31": 165,
+            "32": 165
+          },
+          "Branches": []
+        },
+        "System.Void PersonalDataGenerator.PersonalData::.cctor()": {
+          "Lines": {
+            "214": 1,
+            "215": 1,
+            "216": 1,
+            "217": 1,
+            "218": 1,
+            "219": 1,
+            "220": 1,
+            "221": 1,
+            "222": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/Users/kristianhadberg/Documents/KEASWD/testing/PersonalDataGenetatorTesting/PersonalDataGenerator/Dto/PersonalDataDto.cs": {
+      "PersonalDataGenerator.Dto.PersonalDataDto": {
+        "System.String PersonalDataGenerator.Dto.PersonalDataDto::get_Cpr()": {
+          "Lines": {
+            "5": 0
+          },
+          "Branches": []
+        },
+        "System.DateOnly PersonalDataGenerator.Dto.PersonalDataDto::get_DateOfBirth()": {
+          "Lines": {
+            "6": 0
+          },
+          "Branches": []
+        },
+        "System.String PersonalDataGenerator.Dto.PersonalDataDto::get_FirstName()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.String PersonalDataGenerator.Dto.PersonalDataDto::get_SurName()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "System.String PersonalDataGenerator.Dto.PersonalDataDto::get_Gender()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        },
+        "System.String PersonalDataGenerator.Dto.PersonalDataDto::get_StreetName()": {
+          "Lines": {
+            "10": 0
+          },
+          "Branches": []
+        },
+        "System.String PersonalDataGenerator.Dto.PersonalDataDto::get_StreetNumber()": {
+          "Lines": {
+            "11": 0
+          },
+          "Branches": []
+        },
+        "System.String PersonalDataGenerator.Dto.PersonalDataDto::get_Floor()": {
+          "Lines": {
+            "12": 0
+          },
+          "Branches": []
+        },
+        "System.String PersonalDataGenerator.Dto.PersonalDataDto::get_Door()": {
+          "Lines": {
+            "13": 0
+          },
+          "Branches": []
+        },
+        "System.String PersonalDataGenerator.Dto.PersonalDataDto::get_ZipCode()": {
+          "Lines": {
+            "14": 0
+          },
+          "Branches": []
+        },
+        "System.String PersonalDataGenerator.Dto.PersonalDataDto::get_Town()": {
+          "Lines": {
+            "15": 0
+          },
+          "Branches": []
+        },
+        "System.String PersonalDataGenerator.Dto.PersonalDataDto::get_PhoneNumber()": {
+          "Lines": {
+            "16": 0
+          },
+          "Branches": []
+        }
+      },
+      "PersonalDataGenerator.Dto.CprDto": {
+        "System.String PersonalDataGenerator.Dto.CprDto::get_Cpr()": {
+          "Lines": {
+            "22": 0
+          },
+          "Branches": []
+        }
+      },
+      "PersonalDataGenerator.Dto.NameAndGenderDto": {
+        "System.String PersonalDataGenerator.Dto.NameAndGenderDto::get_FirstName()": {
+          "Lines": {
+            "27": 0
+          },
+          "Branches": []
+        },
+        "System.String PersonalDataGenerator.Dto.NameAndGenderDto::get_SurName()": {
+          "Lines": {
+            "28": 0
+          },
+          "Branches": []
+        },
+        "System.String PersonalDataGenerator.Dto.NameAndGenderDto::get_Gender()": {
+          "Lines": {
+            "29": 0
+          },
+          "Branches": []
+        }
+      },
+      "PersonalDataGenerator.Dto.NameGenderDobDto": {
+        "System.String PersonalDataGenerator.Dto.NameGenderDobDto::get_FirstName()": {
+          "Lines": {
+            "34": 0
+          },
+          "Branches": []
+        },
+        "System.String PersonalDataGenerator.Dto.NameGenderDobDto::get_SurName()": {
+          "Lines": {
+            "35": 0
+          },
+          "Branches": []
+        },
+        "System.String PersonalDataGenerator.Dto.NameGenderDobDto::get_Gender()": {
+          "Lines": {
+            "36": 0
+          },
+          "Branches": []
+        },
+        "System.DateOnly PersonalDataGenerator.Dto.NameGenderDobDto::get_DateOfBirth()": {
+          "Lines": {
+            "37": 0
+          },
+          "Branches": []
+        }
+      },
+      "PersonalDataGenerator.Dto.CprNameGenderDto": {
+        "System.String PersonalDataGenerator.Dto.CprNameGenderDto::get_Cpr()": {
+          "Lines": {
+            "42": 0
+          },
+          "Branches": []
+        },
+        "System.String PersonalDataGenerator.Dto.CprNameGenderDto::get_FirstName()": {
+          "Lines": {
+            "43": 0
+          },
+          "Branches": []
+        },
+        "System.String PersonalDataGenerator.Dto.CprNameGenderDto::get_SurName()": {
+          "Lines": {
+            "44": 0
+          },
+          "Branches": []
+        },
+        "System.String PersonalDataGenerator.Dto.CprNameGenderDto::get_Gender()": {
+          "Lines": {
+            "45": 0
+          },
+          "Branches": []
+        }
+      },
+      "PersonalDataGenerator.Dto.CprNameGenderDobDto": {
+        "System.String PersonalDataGenerator.Dto.CprNameGenderDobDto::get_Cpr()": {
+          "Lines": {
+            "50": 0
+          },
+          "Branches": []
+        },
+        "System.String PersonalDataGenerator.Dto.CprNameGenderDobDto::get_FirstName()": {
+          "Lines": {
+            "51": 0
+          },
+          "Branches": []
+        },
+        "System.String PersonalDataGenerator.Dto.CprNameGenderDobDto::get_SurName()": {
+          "Lines": {
+            "52": 0
+          },
+          "Branches": []
+        },
+        "System.String PersonalDataGenerator.Dto.CprNameGenderDobDto::get_Gender()": {
+          "Lines": {
+            "53": 0
+          },
+          "Branches": []
+        },
+        "System.DateOnly PersonalDataGenerator.Dto.CprNameGenderDobDto::get_DateOfBirth()": {
+          "Lines": {
+            "54": 0
+          },
+          "Branches": []
+        }
+      },
+      "PersonalDataGenerator.Dto.AddressDto": {
+        "System.String PersonalDataGenerator.Dto.AddressDto::get_StreetName()": {
+          "Lines": {
+            "59": 0
+          },
+          "Branches": []
+        },
+        "System.String PersonalDataGenerator.Dto.AddressDto::get_StreetNumber()": {
+          "Lines": {
+            "60": 0
+          },
+          "Branches": []
+        },
+        "System.String PersonalDataGenerator.Dto.AddressDto::get_Floor()": {
+          "Lines": {
+            "61": 0
+          },
+          "Branches": []
+        },
+        "System.String PersonalDataGenerator.Dto.AddressDto::get_Door()": {
+          "Lines": {
+            "62": 0
+          },
+          "Branches": []
+        },
+        "System.String PersonalDataGenerator.Dto.AddressDto::get_ZipCode()": {
+          "Lines": {
+            "63": 0
+          },
+          "Branches": []
+        },
+        "System.String PersonalDataGenerator.Dto.AddressDto::get_Town()": {
+          "Lines": {
+            "64": 0
+          },
+          "Branches": []
+        }
+      },
+      "PersonalDataGenerator.Dto.PersonalDataWithAddressDto": {
+        "System.String PersonalDataGenerator.Dto.PersonalDataWithAddressDto::get_Cpr()": {
+          "Lines": {
+            "71": 0
+          },
+          "Branches": []
+        },
+        "System.DateOnly PersonalDataGenerator.Dto.PersonalDataWithAddressDto::get_DateOfBirth()": {
+          "Lines": {
+            "72": 0
+          },
+          "Branches": []
+        },
+        "System.String PersonalDataGenerator.Dto.PersonalDataWithAddressDto::get_FirstName()": {
+          "Lines": {
+            "73": 0
+          },
+          "Branches": []
+        },
+        "System.String PersonalDataGenerator.Dto.PersonalDataWithAddressDto::get_SurName()": {
+          "Lines": {
+            "74": 0
+          },
+          "Branches": []
+        },
+        "System.String PersonalDataGenerator.Dto.PersonalDataWithAddressDto::get_Gender()": {
+          "Lines": {
+            "75": 0
+          },
+          "Branches": []
+        },
+        "System.String PersonalDataGenerator.Dto.PersonalDataWithAddressDto::get_StreetName()": {
+          "Lines": {
+            "76": 0
+          },
+          "Branches": []
+        },
+        "System.String PersonalDataGenerator.Dto.PersonalDataWithAddressDto::get_StreetNumber()": {
+          "Lines": {
+            "77": 0
+          },
+          "Branches": []
+        },
+        "System.String PersonalDataGenerator.Dto.PersonalDataWithAddressDto::get_Floor()": {
+          "Lines": {
+            "78": 0
+          },
+          "Branches": []
+        },
+        "System.String PersonalDataGenerator.Dto.PersonalDataWithAddressDto::get_Door()": {
+          "Lines": {
+            "79": 0
+          },
+          "Branches": []
+        },
+        "System.String PersonalDataGenerator.Dto.PersonalDataWithAddressDto::get_Town()": {
+          "Lines": {
+            "80": 0
+          },
+          "Branches": []
+        },
+        "System.String PersonalDataGenerator.Dto.PersonalDataWithAddressDto::get_ZipCode()": {
+          "Lines": {
+            "81": 0
+          },
+          "Branches": []
+        }
+      },
+      "PersonalDataGenerator.Dto.PhonenumberDto": {
+        "System.String PersonalDataGenerator.Dto.PhonenumberDto::get_PhoneNumber()": {
+          "Lines": {
+            "86": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/Users/kristianhadberg/Documents/KEASWD/testing/PersonalDataGenetatorTesting/PersonalDataGenerator/Controllers/PersonalDataController.cs": {
+      "PersonalDataGenerator.Controllers.PersonalDataController": {
+        "PersonalDataGenerator.Dto.CprDto PersonalDataGenerator.Controllers.PersonalDataController::GetCpr()": {
+          "Lines": {
+            "14": 0,
+            "15": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0
+          },
+          "Branches": []
+        },
+        "PersonalDataGenerator.Dto.NameAndGenderDto PersonalDataGenerator.Controllers.PersonalDataController::GetNameGender()": {
+          "Lines": {
+            "25": 0,
+            "26": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0
+          },
+          "Branches": []
+        },
+        "PersonalDataGenerator.Dto.NameGenderDobDto PersonalDataGenerator.Controllers.PersonalDataController::GetNameGenderDob()": {
+          "Lines": {
+            "38": 0,
+            "39": 0,
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "48": 0
+          },
+          "Branches": []
+        },
+        "PersonalDataGenerator.Dto.CprNameGenderDto PersonalDataGenerator.Controllers.PersonalDataController::GetCprNameGender()": {
+          "Lines": {
+            "52": 0,
+            "53": 0,
+            "55": 0,
+            "56": 0,
+            "57": 0,
+            "58": 0,
+            "59": 0,
+            "60": 0,
+            "61": 0,
+            "62": 0
+          },
+          "Branches": []
+        },
+        "PersonalDataGenerator.Dto.CprNameGenderDobDto PersonalDataGenerator.Controllers.PersonalDataController::GetCprNameGenderDob()": {
+          "Lines": {
+            "66": 0,
+            "67": 0,
+            "69": 0,
+            "70": 0,
+            "71": 0,
+            "72": 0,
+            "73": 0,
+            "74": 0,
+            "75": 0,
+            "76": 0,
+            "77": 0
+          },
+          "Branches": []
+        },
+        "PersonalDataGenerator.Dto.AddressDto PersonalDataGenerator.Controllers.PersonalDataController::GetAddress()": {
+          "Lines": {
+            "82": 0,
+            "83": 0,
+            "85": 0,
+            "86": 0,
+            "87": 0,
+            "88": 0,
+            "89": 0,
+            "90": 0,
+            "91": 0,
+            "92": 0,
+            "93": 0,
+            "95": 0
+          },
+          "Branches": []
+        },
+        "PersonalDataGenerator.Dto.PhonenumberDto PersonalDataGenerator.Controllers.PersonalDataController::GetPhoneNumber()": {
+          "Lines": {
+            "99": 0,
+            "100": 0,
+            "101": 0,
+            "102": 0,
+            "103": 0,
+            "104": 0,
+            "105": 0
+          },
+          "Branches": []
+        },
+        "PersonalDataGenerator.Dto.PersonalDataDto PersonalDataGenerator.Controllers.PersonalDataController::GetPersonalData()": {
+          "Lines": {
+            "109": 0,
+            "110": 0,
+            "112": 0,
+            "113": 0,
+            "114": 0,
+            "115": 0,
+            "116": 0,
+            "117": 0,
+            "118": 0,
+            "119": 0,
+            "120": 0,
+            "121": 0,
+            "122": 0,
+            "123": 0,
+            "124": 0,
+            "125": 0,
+            "126": 0,
+            "127": 0
+          },
+          "Branches": []
+        },
+        "Microsoft.AspNetCore.Mvc.ActionResult`1<System.Collections.Generic.List`1<PersonalDataGenerator.Dto.PersonalDataDto>> PersonalDataGenerator.Controllers.PersonalDataController::GetBulkPersonalData(System.Int32)": {
+          "Lines": {
+            "131": 0,
+            "132": 0,
+            "133": 0,
+            "134": 0,
+            "137": 0,
+            "138": 0,
+            "140": 0,
+            "141": 0,
+            "142": 0,
+            "143": 0,
+            "144": 0,
+            "145": 0,
+            "146": 0,
+            "147": 0,
+            "148": 0,
+            "149": 0,
+            "150": 0,
+            "151": 0,
+            "152": 0,
+            "153": 0,
+            "154": 0,
+            "155": 0,
+            "156": 0,
+            "158": 0,
+            "159": 0
+          },
+          "Branches": [
+            {
+              "Line": 132,
+              "Offset": 3,
+              "EndOffset": 5,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 132,
+              "Offset": 3,
+              "EndOffset": 12,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 132,
+              "Offset": 15,
+              "EndOffset": 17,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 132,
+              "Offset": 15,
+              "EndOffset": 40,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 140,
+              "Offset": 256,
+              "EndOffset": 72,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 140,
+              "Offset": 256,
+              "EndOffset": 261,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    }
+  }
+}
